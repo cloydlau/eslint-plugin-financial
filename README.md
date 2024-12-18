@@ -62,7 +62,7 @@ Configure it in `.eslintrc`:
 }
 ```
 
-### Flat Config (ESLint v9 default)
+### Flat Config (ESLint ≥v9 default)
 
 ```js
 // eslint.config.js
@@ -76,7 +76,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const compat = new FlatCompat({
-    baseDirectory: __dirname
+  baseDirectory: __dirname
 })
 
 export default [
